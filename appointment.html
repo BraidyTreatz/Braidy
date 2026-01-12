@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BraidyTreats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="./external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner_container">
+            <header class="navigation">
+                <div class="name">
+                    <h1>BraidyTreats</h1>
+                    <p>Hairstyle.Beauty.Craft</p>
+                </div>
+
+                <nav class="menu_bar">
+                    <a href="index.html" id="home_but">Home</a>
+                    <a href="contact.html" id="contact_but">Contact</a>
+                    <a href="appointment.html" id="appointment_but">Appointment</a>
+                    <a href="training.html">Training</a>
+                </nav>
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="welcome">
+                <h2>Make an appointment with us!</h2>
+                <h4>
+                    You are beautifully made, and we’re honored to help you shine one style at a time.
+                </h4>
+            </section>
+
+            <!-- Appointment Form -->
+            <main>
+                <form action="https://formbold.com/s/FORM_ID" method="POST">
+
+                    <div class="formbold-mb-5">
+                        <label for="name" class="formbold-form-label">Full Name</label>
+                        <input type="text" name="name" id="name"
+                               placeholder="Full Name"
+                               class="formbold-form-input">
+                    </div>
+
+                    <div class="formbold-mb-5">
+                        <label for="phone" class="formbold-form-label">Phone Number</label>
+                        <input type="text" name="phone" id="phone"
+                               placeholder="Enter your phone number"
+                               class="formbold-form-input">
+                    </div>
+
+                    <div class="formbold-mb-5">
+                        <label for="email" class="formbold-form-label">Email Address</label>
+                        <input type="email" name="email" id="email"
+                               placeholder="Enter your email"
+                               class="formbold-form-input">
+                    </div>
+                    
+                    <div class="formbold-mb-5">
+                        <label for="hairstyle" class="formbold-form-label">Select Hairstyle</label>
+                        <select name="hairstyle" id="hairstyle">
+                               <option value="box braids">Box Braids</option>
+                               <option value="twists">Twists</option>
+                               <option value="fishtail">Fishtail Braids</option>
+                        </select>
+                    </div>
+
+                    
+
+                    <!-- Date & Time -->
+                    <div class="flex flex-wrap formbold--mx-3">
+                        <div class="daT">Select Date from Calender</div>
+                        <div id="calendly-embed" style="min-width:50%;height:50%;">
+                            <div class="calendly-inline-widget" 
+                                    data-url="https://calendly.com/maryadofo/braidytreats/"
+                                    data-resize="true"
+                                    style="min-width:100%;height:100%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="formbold-mb-5 formbold-pt-3">
+                        <label class="formbold-form-label formbold-form-label-2">
+                            Address Details
+                        </label>
+
+                        <div class="flex flex-wrap formbold--mx-3">
+                            <div class="w-full sm:w-half formbold-px-3">
+                                <input type="text" name="area" id="area"
+                                       placeholder="Enter area"
+                                       class="formbold-form-input">
+                            </div>
+
+                            <div class="w-full sm:w-half formbold-px-3">
+                                <input type="text" name="city" id="city"
+                                       placeholder="Enter city"
+                                       class="formbold-form-input">
+                            </div>
+
+                            <div class="w-full sm:w-half formbold-px-3">
+                                <input type="text" name="state" id="state"
+                                       placeholder="Enter state"
+                                       class="formbold-form-input">
+                            </div>
+
+                            <div class="w-full sm:w-half formbold-px-3">
+                                <input type="text" name="post-code" id="post-code"
+                                       placeholder="Post Code"
+                                       class="formbold-form-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button class="formbold-btn">Book Appointment</button>
+
+                </form>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer">© 2026 BraidyTreats Salon</p>
+    </footer>
+    <script>
+        Calendly.initInlineWidget({
+        url: 'https://calendly.com/maryadofo/braidytreats',
+        parentElement: document.getElementById('calendly-embed')
+        });
+    </script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</body>
+</html>

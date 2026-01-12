@@ -1,0 +1,346 @@
+body {
+    margin: 0%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200%;
+    color: white;
+    font-size: 150%;
+    padding-bottom: 2px;
+   
+
+
+}
+
+.name h1{
+    font-size: 250%;
+}
+.name p{
+    display: inline-block;
+    padding-left: 100%;       /* Start the content off-screen to the right */
+    animation: marquee 15s linear infinite;
+    
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);     /* Start position (left edge of the 100% padding) */
+    }
+    100% {
+        transform: translate(-100%, 0); /* End position (moves left by 100% of its own width) */
+    }
+
+}
+.navigation{
+    background-color: rgb(62, 39, 35);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding-top: 15px;
+    right: 1%;
+}
+
+.menu_bar{
+    background-color: #815550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding-top: 4px;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    margin-right: 20px;
+    border-radius: 10%;
+}
+
+#appointment_but{
+    background-color: white;
+    color: #815550;
+}
+
+.welcome{
+    height: 300%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.welcome h2{
+    font-size: 200%;
+    font-weight: bold;
+    /*position: relative;
+    top: 45px;*/
+    margin-top: 40%;
+}
+.welcome h4{
+    font-size: 120%;
+}
+
+footer{
+    background-color: #815550;
+    color: #aca664;
+    font-size: 180%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+  
+  
+  
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    ;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #815550;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .formbold-form-input_comment{
+    height: 100px;
+    width: 500px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+
+  .daT{
+    color: #07074d;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+#calendly-embed{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+  main{
+    margin: 0%;
+  }
+
+  @media (max-width: 600px) {
+        .welcome{
+        height: 300%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 89%;
+        justify-content: center
+        }
+        .welcome h2{
+        font-size: 106%;
+        margin-top: 57%;
+        }
+        .welcome h4{
+        font-size: 60%;
+        margin-right: 1.5%;
+        }
+        .navigation a{
+            font-size: 120%;
+        }
+        .footer{
+            font-size: 18px;
+            height: 110px;
+            align-items: center;
+        }
+        .menu_bar{
+            gap: 1.2%;
+            font-size: 14px;
+        }
+        .name{
+            height: 60%;
+        }
+        .name h1{
+        font-size: 160%;
+        }
+        .name p{
+        font-size: 50%;
+        }
+
+        .formbold-form-label {
+        display: block;
+        font-weight: 500;
+        font-size: 11px;
+        color: #07074d;
+        margin-bottom: 12px;
+    }
+        .formbold-form-label-2 {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+        .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formbold-form-input_comment{
+    height: 50px;
+    width: 70%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+
+  }
+  .daT{
+    color: #07074d;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 12px;
+    margin-left: 6%;
+  }
+  #calendly-embed{
+    margin-top: 10%;
+    margin-bottom: 7%;
+    margin-left: 10%;
+    min-width: 170px;
+    min-height: 60px%;
+  
+  }
+
+}
+    @media (min-width: 600px) and (max-width: 1024px) {
+
+        .welcome h2{
+        font-size: 190%;
+        /*position: relative;
+        top: 30px;*/
+        margin-top: 40%;
+        }
+        .welcome h4{
+        font-size: 120%;
+        }
+
+    }
+ 
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+
+  

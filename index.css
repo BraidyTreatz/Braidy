@@ -1,0 +1,206 @@
+body {
+    margin: 0%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200%;
+    color: white;
+    font-size: 150%;
+    padding-bottom: 2px;
+    width: 100%;
+    
+}
+
+.name h1{
+    font-size: 250%;
+}
+.name p{
+    display: inline-block;
+    padding-left: 100%;       /* Start the content off-screen to the right */
+    animation: marquee 15s linear infinite;
+    
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);     /* Start position (left edge of the 100% padding) */
+    }
+    100% {
+        transform: translate(-100%, 0); /* End position (moves left by 100% of its own width) */
+    }
+
+}
+.navigation{
+    background-color: rgb(62, 39, 35);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding-top: 15px;
+}
+
+.menu_bar{
+    background-color: #815550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding-top: 4px;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    margin-right: 20px;
+    border-radius: 10%;
+}
+
+#home_but{
+    background-color: white;
+    color: #815550;
+}
+
+.welcome{
+    height: 300%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.welcome h2{
+    font-size: 200%;
+    font-weight: bold;
+    /*position: relative;
+    top: 45px;*/
+    margin-top: 25%;
+}
+.welcome h4{
+    font-size: 120%;
+}
+
+.items_div{
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_1,
+.item_2,
+.item_3{
+    /*border: #ccb8b8 solid 10px;*/
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 50%;
+    box-shadow: 0 10px 24px #ccb8b8;
+}
+ .item_1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px;
+ }
+ .item_2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px;
+ }
+ .item_3:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px;
+ }
+.items_div img{
+    box-sizing: border-box;
+    width: 50%;
+    height: 30%;
+    align-items: center;
+}
+
+ @media (max-width: 600px) {
+        .item_1,
+        .item_2,
+        .item_3 {
+            /* On small screens, each image takes 100% of the container width */
+            flex: 1 1 100%; 
+        }
+        .welcome h2{
+        font-size: 106%;
+        margin-top: 57%;
+        }
+        .welcome h4{
+        font-size: 64%;
+        margin: 2%;
+        }
+        .navigation a{
+            font-size: 120%;
+        }
+        .footer{
+            font-size: 18px;
+            height: 110px;
+            align-items: center;
+        }
+        .menu_bar{
+            gap: 1.2%;
+            font-size: 14px;
+        }
+        .name{
+            height: 60%;
+        }
+        .name h1{
+        font-size: 160%;
+        }
+        .name p{
+        font-size: 50%;
+        }
+
+
+    }
+
+    @media (min-width: 600px) and (max-width: 1024px) {
+
+        .welcome h2{
+        font-size: 190%;
+        /*position: relative;
+        top: 30px;*/
+        margin-top: 40%;
+        }
+        .welcome h4{
+        font-size: 120%;
+        }
+
+    }
+
+.braid_name{
+    
+}
+
+.price{
+    
+}
+
+footer{
+    background-color: #815550;
+    color: #aca664;
+    font-size: 180%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
