@@ -209,9 +209,24 @@ footer{
     margin-top: 2%;
     margin-bottom: 2%;
   }
-#calendly-embed{
-    margin-top: 10%;
-    margin-bottom: 7%;
+  
+.apt_dates{
+  display: inline-flex;
+}
+
+.dateAndTime{
+  background-color: #815550;
+  color: white;
+  gap: 40%;
+  width: 70%;
+  margin: 5%;
+  margin-bottom: 19%;
+  box-shadow: 9px 15px 20px #a18683;
+  cursor: pointer;
+}
+
+.select_date{
+  font-size: 17px;
 }
 
 
